@@ -1,0 +1,31 @@
+.themeToggle {
+  position: relative;
+  overflow: hidden;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease-in-out !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.themeToggle:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+.themeToggle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  border-radius: inherit;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+.themeToggle:hover::before {
+  opacity: 1;
+  transform: scale(1.1);
+}

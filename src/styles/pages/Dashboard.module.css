@@ -1,0 +1,32 @@
+.container {
+  margin-top: 64px;
+}
+
+.section {
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.chartContainer {
+  padding: 16px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.gridContainer {
+  margin-top: 24px;
+}
+
+.paper {
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .chartContainer {
+    overflow-x: auto;
+  }
+}

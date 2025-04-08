@@ -1,0 +1,83 @@
+.navbar {
+  background: linear-gradient(90deg, #1a237e, #0d47a1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  flex-grow: 1;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand {
+  font-weight: 700;
+  background: linear-gradient(45deg, #fff, #e3f2fd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration: none;
+}
+
+.navButton {
+  border-radius: 20px;
+  padding: 6px 16px;
+  transition: all 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.userButton {
+  border-radius: 20px;
+  padding: 6px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.userButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.themeToggle {
+  transition: transform 0.3s ease;
+}
+
+.themeToggle:hover {
+  transform: rotate(180deg);
+}
+
+.loginButton {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 6px 16px;
+}
+
+.userMenu {
+  margin-top: 8px;
+}
+
+.userMenu .MuiMenuItem-root {
+  padding: 8px 16px;
+}
+
+.userMenu .MuiListItemIcon-root {
+  min-width: 36px;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  .brand {
+    font-size: 1.2rem;
+  }
+}
